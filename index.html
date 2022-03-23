@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <!--Bootswatch-->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class = "navbar-brand" href="#"> Productos</a>
+    </nav>
+
+    <!--Navegacion-->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class = "navbar-brand" href="#"> Productos App</a>
+    </nav>
+
+    <div class="Contenedor">
+        <!--Aplicacion-->
+        <div class="columna medida_columa" ></div>
+        <!--Formulario-->
+        <div class="medida-1" >
+            <div class="tarjeta" >
+                <div class = "tarjeta-header">
+                    <h4>Agregar Productos</h4>
+                </div>
+                <form id = "producto-formulario" class="tarjeta-body">
+                    <div class="grupo-formulario">
+                        <input 
+                        type="text"
+                        id="nombre" 
+                        placeholder="Nombre de producto" 
+                        class="control-formulario"
+                               />
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <input 
+                        type="number"
+                        id="precio" 
+                        step="0.01" 
+                        placeholder="Precio de product"
+                        class="control-formulario"
+                        />
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <input 
+                        type="number"
+                        id="año" 
+                        step="1"
+                        value="2022" 
+                        class="control-formulario"
+                        />
+                    </div>
+
+                    <input 
+                    type="submit"       
+                    value="guardar"           
+                    class="btn btn-primario btn-bloque"
+                    />
+                    
+                </form>
+            </div>
+        </div>
+        <!--Lista de productos-->
+        <div id = "productos-lista" class="medida-3" ></div>
+    </div>
+
+  <script src="App.js" type = "module" ></script>
+</body>
+</html>
